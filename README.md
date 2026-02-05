@@ -26,7 +26,10 @@ The solution needed to:
 ---
 
 ## Architecture
-The pipeline follows a **Lakehouse Medallion Architecture**:
+
+The pipeline follows a Lakehouse Medallion Architecture (Bronze → Silver → Gold) designed to separate raw ingestion, transformation, and analytics layers.
+
+![Project Architecture](https://github.com/shonil24/Atlikon-fmcg-data-engineering-project/blob/master/resources/project_architecture.png)
 
 ### Bronze Layer
 - Raw immutable data ingestion from source CSV files
